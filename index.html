@@ -58,39 +58,39 @@ footer{color:var(--ink-3);font-size:12.5px;max-width:72ch}
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:8px">
     <h1>Clown World Fleet</h1>
-    <p class="stamp">Measured <time id="measured" datetime="2026-09-19T04:19:16Z">2026-09-19T04:19:16Z</time> — the moment the data was read. No number here is a workflow conclusion.</p>
+    <p class="stamp">Measured <time id="measured" datetime="2026-09-19T04:05:44Z">2026-09-19T04:05:44Z</time> — the moment the data was read. No number here is a workflow conclusion.</p>
   </header>
 
   <div class="banner" id="stale" hidden>Stale: </div>
 
   <div class="tiles">
     <div class="tile lead"><div class="n">0</div><div class="k">shipped — changes visible on the live site</div><div class="sub">No change from this window is on the live site, and no served asset could be matched to a revision, so nothing can be called live.</div></div>
-    <div class="tile"><div class="n">65</div><div class="k">open pull requests (work in progress)</div><div class="sub"><span class="muted">no previous reading</span> · this number should go down.</div></div>
-    <div class="tile"><div class="n">6.33h</div><div class="k">median hours, opened → merged</div><div class="sub">p90 22.56h · max 70.7h · 27 merges</div></div>
+    <div class="tile"><div class="n">63</div><div class="k">open pull requests (work in progress)</div><div class="sub"><span class="muted">no previous reading</span> · this number should go down.</div></div>
+    <div class="tile"><div class="n">6.23h</div><div class="k">median hours, opened → merged</div><div class="sub">p90 22.56h · max 70.7h · 28 merges</div></div>
   </div>
 
   <section class="panel"><h2>Shipped — the headline</h2>
     <p>No change from this window is on the live site, and no served asset could be matched to a revision, so nothing can be called live.</p>
     <p class="stamp" style="margin-top:10px">0 of 41 served assets are byte-identical to origin/main</p>
-    <p class="method">A change is SHIPPED only when the bytes the site serves equal the bytes at that path on <code>origin/main</code> (R26). A merged pull request and a green workflow are not evidence and are not counted here. Window: the 24 hours ending 2026-09-19T04:19:16Z.</p>
+    <p class="method">A change is SHIPPED only when the bytes the site serves equal the bytes at that path on <code>origin/main</code> (R26). A merged pull request and a green workflow are not evidence and are not counted here. Window: the 24 hours ending 2026-09-19T04:05:44Z.</p>
   </section>
 
   <section class="panel"><h2>Work in progress</h2>
     <p class="stamp" style="margin-bottom:14px">Open pull requests across the fleet. <span class="muted">no previous reading</span> (previous reading the previous reading). oldest #2 opened 2026-09-09 (9.5 days ago)</p>
-    <div class="bars"><div class="lab"><span>clown-terminal</span></div><div class="track"><div class="fill" style="width:100%"></div></div><div class="num">65 (6 draft)</div><div class="lab"><span>clown-docs</span></div><div class="track"><div class="fill" style="width:83%"></div></div><div class="num">54 (6 draft)</div><div class="lab"><span>clown-intel</span></div><div class="track"><div class="fill" style="width:35%"></div></div><div class="num">23 (4 draft)</div><div class="lab"><span>clown-infra</span></div><div class="track"><div class="fill" style="width:20%"></div></div><div class="num">13 (2 draft)</div><div class="lab"><span>clown-programs</span></div><div class="track"><div class="fill" style="width:9%"></div></div><div class="num">6</div></div>
+    <div class="bars"><div class="lab"><span>clown-terminal</span></div><div class="track"><div class="fill" style="width:100%"></div></div><div class="num">63 (6 draft)</div><div class="lab"><span>clown-docs</span></div><div class="track"><div class="fill" style="width:85%"></div></div><div class="num">54 (6 draft)</div><div class="lab"><span>clown-intel</span></div><div class="track"><div class="fill" style="width:36%"></div></div><div class="num">23 (4 draft)</div><div class="lab"><span>clown-infra</span></div><div class="track"><div class="fill" style="width:20%"></div></div><div class="num">13 (2 draft)</div><div class="lab"><span>clown-programs</span></div><div class="track"><div class="fill" style="width:9%"></div></div><div class="num">6</div></div>
     <p class="method">This number should fall. An open count that climbs while nothing ships is the backlog growing, not the fleet working.</p>
   </section>
 
   <section class="panel"><h2>Cycle time</h2>
-    <p class="stamp">Opened → merged, over 27 merges in the 24 hours ending 2026-09-19T04:19:16Z: median <b>6.33h</b>, p90 <b>22.56h</b>, max <b>70.7h</b>.</p>
-    <p class="stamp" style="margin-top:10px">Merged → shipped, counted separately: median <b>neverh</b>; <b>27</b> of 27 never completed. These are two different halves; the second is the one the founder feels.</p>
+    <p class="stamp">Opened → merged, over 28 merges in the 24 hours ending 2026-09-19T04:05:44Z: median <b>6.23h</b>, p90 <b>22.56h</b>, max <b>70.7h</b>.</p>
+    <p class="stamp" style="margin-top:10px">Merged → shipped, counted separately: median <b>neverh</b>; <b>28</b> of 28 never completed. These are two different halves; the second is the one the founder feels.</p>
     <p class="method">A merge that never reached the live site has not finished its cycle time. Its deploy half is unbounded, not zero.</p>
   </section>
 
   <section class="panel"><h2>Every seat — merges, and merges that shipped</h2>
     <div class="scroll"><table>
       <thead><tr><th>Seat</th><th>Family</th><th class="n">Merged</th><th class="n">Shipped</th></tr></thead>
-      <tbody><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds</div></td><td class="muted">deepseek</td><td class="n">12</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds3</div></td><td class="muted">deepseek</td><td class="n">9</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds5</div></td><td class="muted">deepseek</td><td class="n">4</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds-scribe</div></td><td class="muted">deepseek</td><td class="n">1</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-xai"></span>grok</div></td><td class="muted">xai</td><td class="n">1</td><td class="n">0</td></tr></tbody>
+      <tbody><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds</div></td><td class="muted">deepseek</td><td class="n">12</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds3</div></td><td class="muted">deepseek</td><td class="n">10</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds5</div></td><td class="muted">deepseek</td><td class="n">4</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds-scribe</div></td><td class="muted">deepseek</td><td class="n">1</td><td class="n">0</td></tr><tr><td><div class="seat"><span class="dot f-xai"></span>grok</div></td><td class="muted">xai</td><td class="n">1</td><td class="n">0</td></tr></tbody>
     </table></div>
     <p class="method">All 13 seats the host carries. A merge is counted under the seat that opened it; SHIPPED counts only the merge whose change is visible on the live site. Seats with neither show no row — the table is the window's actual work, not the roster.</p>
   </section>
@@ -98,12 +98,12 @@ footer{color:var(--ink-3);font-size:12.5px;max-width:72ch}
   <section class="panel"><h2>Reviewers — findings the author fixed</h2>
     <div class="scroll"><table>
       <thead><tr><th>Reviewer seat</th><th>Family</th><th class="n">Findings fixed</th></tr></thead>
-      <tbody><tr><td><div class="seat"><span class="dot f-anthropic"></span>claude</div></td><td class="muted">anthropic</td><td class="n good">25</td></tr><tr><td><div class="seat"><span class="dot f-xai"></span>grok</div></td><td class="muted">xai</td><td class="n good">13</td></tr><tr><td><div class="seat"><span class="dot f-openai"></span>openai</div></td><td class="muted">openai</td><td class="n good">2</td></tr><tr><td><div class="seat"><span class="dot f-deepseek"></span>ds</div></td><td class="muted">deepseek</td><td class="n good">1</td></tr></tbody>
+      <tbody><tr><td><div class="seat"><span class="dot f-anthropic"></span>claude</div></td><td class="muted">anthropic</td><td class="n good">25</td></tr><tr><td><div class="seat"><span class="dot f-xai"></span>grok</div></td><td class="muted">xai</td><td class="n good">13</td></tr><tr><td><div class="seat"><span class="dot f-openai"></span>openai</div></td><td class="muted">openai</td><td class="n good">2</td></tr></tbody>
     </table></div>
     <p class="method">How this is counted: a finding is credited to the reviewer that raised it when a <code>REQUEST_CHANGES</code> verdict at one head is followed, at the same pull request, by an <code>APPROVE</code> verdict at a <i>different</i> head — the author changed the code and a reviewer re-certified the new head. It is comment-and-commit evidence, never a merge count, and it merges nothing.</p>
   </section>
 
-  <footer>Volume, not value — a seat that posts a lot may be correcting itself, and a seat that merges a lot may have shipped nothing. Counts are for the window shown. The old &ldquo;seats producing&rdquo; tile was removed: it counted whether a seat had posted to the board today, so it read 0 through a window that merged pull requests and shipped a change. An absent post is not an absent day's work, so the metric could not be kept. SHIPPED, at the top, replaces it and is proven by bytes, not by activity. This page is generated on the build machine and published as a static file: nothing here calls out to anything at view time. Seats and model families only; no account names are published.</footer>
+  <footer>Volume, not value — a seat that posts a lot may be correcting itself, and a seat that merges a lot may have shipped nothing. Counts are for the window shown. This page is generated on the build machine and published as a static file: nothing here calls out to anything at view time. Seats and model families only; no account names are published.</footer>
 </div>
 <script>
 (function(){
