@@ -50,6 +50,7 @@ tr:last-child td{border-bottom:0}
 .banner{background:var(--critical);color:#fff;border-radius:10px;padding:14px 18px;font-weight:600}
 a{color:var(--bar)}
 .method{font-size:12.5px;color:var(--ink-2);margin-top:12px}
+.notice{background:var(--surface-2);border-left:3px solid var(--critical);border-radius:6px;padding:10px 14px;font-size:12.5px;color:var(--ink-2);margin-top:10px}
 footer{color:var(--ink-3);font-size:12.5px;max-width:72ch}
 @media (max-width:720px){.tiles{grid-template-columns:1fr}.bars{grid-template-columns:104px 1fr 64px}h1{font-size:24px}}
 </style>
@@ -58,32 +59,33 @@ footer{color:var(--ink-3);font-size:12.5px;max-width:72ch}
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:8px">
     <h1>Clown World Fleet</h1>
-    <p class="stamp">Measured <time id="measured" datetime="2026-09-19T04:37:14Z">2026-09-19T04:37:14Z</time> — the moment the data was read. No number here is a workflow conclusion.</p>
+    <p class="stamp">Measured <time id="measured" datetime="2026-09-19T04:50:00Z">2026-09-19T04:50:00Z</time> — the moment the data was read. No number here is a workflow conclusion.</p>
   </header>
 
   <div class="banner" id="stale" hidden>Stale: </div>
 
   <div class="tiles">
-    <div class="tile lead"><div class="n">1</div><div class="k">shipped — changes visible on the live site</div><div class="sub">1 change(s) are live; the newest is 1.4 h old.</div></div>
+    <div class="tile lead"><div class="n">1</div><div class="k">shipped — changes visible on the live site</div><div class="sub">1 change(s) are live; the newest is 1.6 h old.</div></div>
     <div class="tile"><div class="n">65</div><div class="k">open pull requests (work in progress)</div><div class="sub"><span class="muted">no previous reading</span> · this number should go down.</div></div>
     <div class="tile"><div class="n">6.42h</div><div class="k">median hours, opened → merged</div><div class="sub">p90 22.56h · max 70.7h · 26 merges</div></div>
   </div>
 
   <section class="panel"><h2>Shipped — the headline</h2>
-    <p>1 change(s) are live; the newest is 1.4 h old.</p>
+    <p>1 change(s) are live; the newest is 1.6 h old.</p>
     <p class="stamp" style="margin-top:10px">44 of 44 served assets are byte-identical to origin/main</p>
-    <p class="method">A change is SHIPPED only when the bytes the site serves equal the bytes at that path on <code>origin/main</code> (R26). A merged pull request and a green workflow are not evidence and are not counted here. Window: the 24 hours ending 2026-09-19T04:37:14Z.</p>
+    <p class="method">A change is SHIPPED only when the bytes the site serves equal the bytes at that path on <code>origin/main</code> (R26). A merged pull request and a green workflow are not evidence and are not counted here. Window: the 24 hours ending 2026-09-19T04:50:00Z.</p>
   </section>
 
   <section class="panel"><h2>Work in progress</h2>
-    <p class="stamp" style="margin-bottom:14px">Open pull requests across the fleet. <span class="muted">no previous reading</span> (previous reading the previous reading). oldest #2 opened 2026-09-09 (9.5 days ago)</p>
+    <p class="stamp" style="margin-bottom:14px">Open pull requests across the fleet. <span class="muted">no previous reading</span> (previous reading 2026-09-19T04:38:45Z). oldest #2 opened 2026-09-09 (9.5 days ago)</p>
+    <p class="notice">Unavailable: the WIP trend — the previous reading could not be read from --site.</p>
     <div class="bars"><div class="lab"><span>clown-terminal</span></div><div class="track"><div class="fill" style="width:100%"></div></div><div class="num">65 (6 draft)</div><div class="lab"><span>clown-docs</span></div><div class="track"><div class="fill" style="width:83%"></div></div><div class="num">54 (6 draft)</div><div class="lab"><span>clown-intel</span></div><div class="track"><div class="fill" style="width:35%"></div></div><div class="num">23 (4 draft)</div><div class="lab"><span>clown-infra</span></div><div class="track"><div class="fill" style="width:20%"></div></div><div class="num">13 (2 draft)</div><div class="lab"><span>clown-programs</span></div><div class="track"><div class="fill" style="width:9%"></div></div><div class="num">6</div></div>
     <p class="method">This number should fall. An open count that climbs while nothing ships is the backlog growing, not the fleet working.</p>
   </section>
 
   <section class="panel"><h2>Cycle time</h2>
-    <p class="stamp">Opened → merged, over 26 merges in the 24 hours ending 2026-09-19T04:37:14Z: median <b>6.42h</b>, p90 <b>22.56h</b>, max <b>70.7h</b>.</p>
-    <p class="stamp" style="margin-top:10px">Merged → shipped, counted separately: median <b>1.41h</b>; <b>25</b> of 26 never completed. These are two different halves; the second is the one the founder feels.</p>
+    <p class="stamp">Opened → merged, over 26 merges in the 24 hours ending 2026-09-19T04:50:00Z: median <b>6.42h</b>, p90 <b>22.56h</b>, max <b>70.7h</b>.</p>
+    <p class="stamp" style="margin-top:10px">Merged → shipped, counted separately: median <b>1.63h</b>; <b>25</b> of 26 never completed. These are two different halves; the second is the one the founder feels.</p>
     <p class="method">A merge that never reached the live site has not finished its cycle time. Its deploy half is unbounded, not zero.</p>
   </section>
 
